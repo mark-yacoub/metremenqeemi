@@ -1,0 +1,13 @@
+{
+  "extends": ["google", "prettier", "plugin:react/recommended"],
+  "plugins": ["prettier", "react", "babel"],
+  "parser": "babel-eslint",
+  "rules": {
+    "prettier/prettier": ["error"],
+    "require-jsdoc": 0,
+    "no-invalid-this": 0,
+    "babel/no-invalid-this": 1,
+    "max-len": ["error", {"code": 100}],
+    "react/prop-types": [0]
+  }
+}
