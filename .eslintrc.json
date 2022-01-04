@@ -3,11 +3,18 @@
   "plugins": ["prettier", "react", "babel"],
   "parser": "babel-eslint",
   "rules": {
-    "prettier/prettier": ["error"],
     "require-jsdoc": 0,
     "no-invalid-this": 0,
     "babel/no-invalid-this": 1,
     "max-len": ["error", {"code": 100}],
-    "react/prop-types": [0]
+    "react/prop-types": [0],
+    "jsx-quotes": ["error", "prefer-single"],
+    "react-native/no-inline-styles": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "no-inline-styles": false
+      }
+    ]
   }
 }
