@@ -4,6 +4,7 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import {NavigationContainer} from '@react-navigation/native';
 
 import Lesson from './screens/lesson';
+import MyTextInput from './components/textInput';
 
 const HomeScreen = ({navigation}) => (
   <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -30,7 +31,7 @@ const LevelFour = ({navigation}) => (
 );
 
 const About = ({navigation}) => (
-  <View style={{flex: 1, alignItems: ' center', justifyContent: ' center'}}>
+  <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
     <Button onPress={() => navigation.goBack()} title='Go back home' />
   </View>
 );
