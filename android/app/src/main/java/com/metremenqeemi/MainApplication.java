@@ -1,7 +1,5 @@
 package com.metremenqeemi;
 
-import com.facebook.react.bridge.JSIModulePackage;
-import com.swmansion.reanimated.ReanimatedJSIModulePackage;
 import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
@@ -20,11 +18,6 @@ public class MainApplication extends Application implements ReactApplication {
         @Override
         public boolean getUseDeveloperSupport() {
           return BuildConfig.DEBUG;
-        }
-
-        @Override
-        protected JSIModulePackage getJSIModulePackage() {
-        return new ReanimatedJSIModulePackage();
         }
 
         @Override
