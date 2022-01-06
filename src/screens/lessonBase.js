@@ -25,7 +25,7 @@ const Lesson = ({level, lessonNumber}) => {
     }
   };
 
-  return <Suspense fallback={loadingScreen()}>{getComponentForLesson(1, 2)}</Suspense>;
+  return <Suspense fallback={loadingScreen()}>{getComponentForLesson(1, 3)}</Suspense>;
 };
 
 export default Lesson;
