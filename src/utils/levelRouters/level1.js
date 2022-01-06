@@ -1,12 +1,14 @@
 import React from 'react';
 
 const Level1Intro = React.lazy(() => import('../../screens/level1/intro'));
+const Level1LearningLetters = React.lazy(() => import('../../screens/level1/learningLetters'));
 
 const getComponentForLessonLevel1 = lessonNumber => {
   switch (lessonNumber) {
     case 0:
-      console.log('Level1Intro');
       return <Level1Intro></Level1Intro>;
+    case 1:
+      return <Level1LearningLetters lessonNumber={lessonNumber} />;
     default:
       return null;
   }
