@@ -15,13 +15,17 @@ const lesson1 = {
     Ⲛ: getLetterExplanation('Ⲛ'),
     Ⲣ: getLetterExplanation('Ⲣ'),
   },
-  practiceWords: [
+  exampleWords: [
     {word: 'Ⲛⲟⲩⲣ', pronunciation: 'noor'},
     {word: 'Ⲟⲩⲛ', pronunciation: 'oon'},
+    {word: 'Ⲛⲁⲛ', pronunciation: 'nan'},
     {word: 'Ⲛⲏⲓ', pronunciation: ['neey', 'neei']},
     {word: 'Ⲣⲁⲛ', pronunciation: 'ran'},
     {word: 'Ⲛⲁⲓ', pronunciation: ['nay', 'nai']},
+  ],
+  practiceWords: [
     {word: 'Ⲣⲁ', pronunciation: 'ra'},
+    {word: 'Ⲛⲏ', pronunciation: 'nee'},
   ],
   practicePhrases: [
     {phrase: 'Ⲛⲁⲓ Ⲛⲁⲛ', pronunciation: 'nay nan', translation: 'Have mercy on us'},
@@ -38,21 +42,23 @@ const lesson2 = {
     Ⲕ: getLetterExplanation('Ⲕ'),
     Ⲙ: getLetterExplanation('Ⲙ'),
   },
-  practiceWords: [
+  exampleWords: [
     {word: 'Ⲛⲉⲙ', pronunciation: 'nem'},
     {word: 'Ⲛⲓⲙ', pronunciation: 'nim'},
     {word: 'Ⲕⲉ', pronunciation: 'ke'},
     {word: 'Ⲙⲟⲓ', pronunciation: 'moy'},
-    {word: 'Ⲛⲁⲕ', pronunciation: 'nak'},
-    {word: 'Ⲕⲁⲛ', pronunciation: 'kan'},
-    {word: 'Ⲙⲉⲛ', pronunciation: 'men'},
-    {word: 'Ⲛⲉⲙⲁⲛ', pronunciation: 'neman'},
   ],
   vocab: [
     {word: 'Ⲛⲉⲙ', translation: 'And'},
     {word: 'Ⲣⲁⲛ', translation: 'Name'},
     {word: 'Ⲁⲛⲟⲛ', translation: 'We'},
     {word: 'Ⲁⲛⲟⲕ', translation: 'I'},
+  ],
+  practiceWords: [
+    {word: 'Ⲛⲁⲕ', pronunciation: 'nak'},
+    {word: 'Ⲕⲁⲛ', pronunciation: 'kan'},
+    {word: 'Ⲙⲉⲛ', pronunciation: 'men'},
+    {word: 'Ⲛⲉⲙⲁⲛ', pronunciation: 'neman'},
   ],
   practicePhrases: [
     {
