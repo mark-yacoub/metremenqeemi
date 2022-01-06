@@ -107,7 +107,7 @@ const Level1LearningLetters = ({lessonNumber}) => {
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
         {renderLetters(lessonPlan.letters)}
-        {lessonPlan.exampleWords && renderPracticeWords(lessonPlan.exampleWords)}
+        {renderPracticeWords(lessonPlan.exampleWords)}
         {lessonPlan.vocab && renderVocab(lessonPlan.vocab)}
         {renderPracticeWords(lessonPlan.practiceWords)}
         {lessonPlan.practicePhrases && renderPracticePhrases(lessonPlan.practicePhrases)}
