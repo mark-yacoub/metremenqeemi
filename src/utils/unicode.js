@@ -6,11 +6,25 @@ const incrementToUnicodeChar = (startUnicode, offset) =>
 // TODO: convert to a const, this wouldn't change over time. here and down.
 export const getUpperAndLowerCaseAlphabet = () => {
   const letters = [];
-  for (let i = 0; i < Unicode.GREEK_LETTERS_COUNT * 2; ++i)
-    letters.push(incrementToUnicodeChar(Unicode.GREEK_LETTERS_START_UNICODE, i));
+  let upper = '';
+  let lower = '';
+  for (let i = 0; i < Unicode.GREEK_LETTERS_COUNT * 2; ++i) {
+    if (i % 2 === 0) {
+      upper = incrementToUnicodeChar(Unicode.GREEK_LETTERS_START_UNICODE, i);
+    } else {
+      lower = incrementToUnicodeChar(Unicode.GREEK_LETTERS_START_UNICODE, i);
+      letters.push({upper, lower});
+    }
+  }
 
-  for (let i = 0; i < Unicode.DEMOTIC_LETTERS_COUNT * 2; ++i)
-    letters.push(incrementToUnicodeChar(Unicode.DEMOTIC_LETTERS_START_UNICODE, i));
+  for (let i = 0; i < Unicode.DEMOTIC_LETTERS_COUNT * 2; ++i) {
+    if (i % 2 === 0) {
+      upper = incrementToUnicodeChar(Unicode.DEMOTIC_LETTERS_START_UNICODE, i);
+    } else {
+      lower = incrementToUnicodeChar(Unicode.DEMOTIC_LETTERS_START_UNICODE, i);
+      letters.push({upper, lower});
+    }
+  }
 
   return letters;
 };
