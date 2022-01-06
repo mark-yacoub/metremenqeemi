@@ -3,7 +3,7 @@ import {Button, View} from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {NavigationContainer} from '@react-navigation/native';
 
-import Lesson from './screens/lesson';
+import LessonBase from './screens/lessonBase';
 
 const HomeScreen = ({navigation}) => (
   <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -42,7 +42,7 @@ export default function App() {
     <NavigationContainer>
       <Drawer.Navigator initialRouteName='Home'>
         <Drawer.Screen name='Home' component={HomeScreen} />
-        <Drawer.Screen name='Level One' component={Lesson} />
+        <Drawer.Screen name='Level One' component={LessonBase} />
         <Drawer.Screen name='Level Two' component={LevelTwo} />
         <Drawer.Screen name='Level Three' component={LevelThree} />
         <Drawer.Screen name='Level Four' component={LevelFour} />
