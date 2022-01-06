@@ -19,6 +19,7 @@
     "@types/node": "^17.0.6",
     "bufferutil": "^4.0.6",
     "canvas": "^2.5.0",
+    "prop-types": "^15.8.1",
     "react": "17.0.2",
     "react-native": "0.66.4",
     "react-native-gesture-handler": "^1.10.3",
