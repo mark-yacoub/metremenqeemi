@@ -9,6 +9,7 @@ const getComponentForLessonLevel1 = lessonNumber => {
       return <Level1Intro></Level1Intro>;
     case 1:
     case 2:
+    case 3:
       return <Level1LearningLetters lessonNumber={lessonNumber} />;
     default:
       return null;
