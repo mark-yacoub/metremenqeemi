@@ -111,10 +111,64 @@ const lesson3 = {
   ],
 };
 
+const lesson4 = {
+  letters: {
+    Ϣ: getLetterExplanation('Ϣ'),
+    Ϥ: getLetterExplanation('Ϥ'),
+    Ϧ: getLetterExplanation('Ϧ'),
+    Ⲫ: getLetterExplanation('Ⲫ'),
+    Ⲯ: getLetterExplanation('Ⲯ'),
+  },
+  exampleWords: [
+    {word: 'Ϣⲟⲩⲣⲏ', pronunciation: 'shouri'},
+    {word: 'Ⲧⲁⲝⲓⲥ', pronunciation: 'taxis'},
+    {word: 'Ⲛⲟϥⲣⲓ', pronunciation: 'nofri'},
+    {word: 'Ⲯⲁⲗⲙⲟⲥ', pronunciation: 'psalmos'},
+    {word: 'Ϣⲁⲓ', pronunciation: 'shay'},
+    {word: 'Ⲫⲁⲓ', pronunciation: 'phay'},
+    {word: 'Ϧⲉⲛ', pronunciation: 'khen'},
+    {word: 'Ⲯⲁⲣⲓⲁ', pronunciation: 'psarya'},
+  ],
+  vocab: [
+    {word: 'Ⲥ̀ⲙⲟⲩ', translation: 'Bless'},
+    {word: 'Ⲫ̀ⲣⲁⲛ', translation: 'The Name'},
+    {word: 'Ⲫ̀ⲓⲱⲧ', translation: 'The Father'},
+    {word: 'Ⲡ̀ϣⲏⲣⲓ', translation: 'The Son'},
+    {word: 'Ⲥⲱⲧⲏⲣ', translation: 'Savior'},
+    {word: 'Ⲡⲉⲛⲥⲱⲧⲏⲣ', translation: 'Our Savior'},
+  ],
+  practiceWords: [
+    {word: 'Ⲫⲓⲛ', pronunciation: 'phin'},
+    {word: 'Ⲡⲁⲓϣⲁⲓ', pronunciation: 'payShay'},
+    {word: 'Ϣⲏⲣⲓ', pronunciation: 'sheeri'},
+    {word: 'Ⲧⲁⲓϣⲟⲩⲣⲏ', pronunciation: 'tayshouree'},
+    {word: 'Ⲧⲉⲛⲟⲩⲱϣⲧ', pronunciation: 'tenoo-osht'},
+    {word: 'Ⲥ̀ⲛⲟϥ', pronunciation: 'esnof'},
+  ],
+  practicePhrases: [
+    {
+      phrase: 'Ⲫ̀ⲓⲱⲧ ⲛⲉⲙ ⲡ̀ϣⲏⲣⲓ',
+      pronunciation: 'ephyot nem epsheeri',
+      translation: 'The Father and the Son',
+    },
+    {
+      phrase: 'Ϧⲉⲛ ⲫ̀ⲣⲁⲛ ⲙ̀ⲫ̀ⲓⲱⲧ ⲛⲉⲙ ⲡ̀ϣⲏⲓ',
+      pronunciation: 'khen ephran emephyot nem epsheeri',
+      translation: 'In the Name of the Father and the Son',
+    },
+    {
+      phrase: 'Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀Ⲫ̀ⲓⲱⲧ ⲛⲉⲙ ⲡ̀ϣⲏⲣⲓ',
+      pronunciation: 'tenou-osht emephyot nem epsheeri',
+      translation: 'We worship the Father and the Son',
+    },
+  ],
+};
+
 const lessonPlan = {
   1: lesson1,
   2: lesson2,
   3: lesson3,
+  4: lesson4,
 };
 
 export default lessonPlan;
