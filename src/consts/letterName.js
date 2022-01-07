@@ -15,7 +15,12 @@ export default LETTER_NAME = {
   Ⲥ: 'Seema',
   Ⲧ: 'Tav',
   Ⲩ: 'Upsilon',
+  Ⲫ: 'Phey',
+  Ⲯ: 'Psey',
   Ⲱ: 'Omega',
+  Ϣ: 'Shay',
+  Ϥ: 'Fay',
+  Ϧ: 'Khay',
   ⲞⲨ: 'Omicron-Upsilon',
   '⳿': 'Jinkim',
 };

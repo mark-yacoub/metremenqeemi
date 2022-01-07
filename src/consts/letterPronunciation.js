@@ -14,7 +14,12 @@ export default LETTER_PRONUNCIATION = {
   Ⲥ: 'S',
   Ⲧ: 'T',
   Ⲩ: 'y as in Hymn',
+  Ⲫ: 'Ph',
+  Ⲯ: 'Ps',
   Ⲱ: 'Long O as in Hope',
+  Ϣ: 'Sh',
+  Ϥ: 'F',
+  Ϧ: 'Kh',
   ⲞⲨ: 'OO as in Food',
   '⳿': 'Ⲉ if on a consonant or a glottal stop before the vowel if on a vowel',
 };
