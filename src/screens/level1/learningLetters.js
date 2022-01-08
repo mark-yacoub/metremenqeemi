@@ -60,7 +60,7 @@ const Level1LearningLetters = ({lessonNumber}) => {
     return practiceWordsViews;
   };
 
-  renderVocab = vocabWords => {
+  const renderVocab = vocabWords => {
     const vocabWordsViews = [];
     // Render Header
     vocabWordsViews.push(
