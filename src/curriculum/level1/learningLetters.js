@@ -164,11 +164,64 @@ const lesson4 = {
   ],
 };
 
+const lesson5 = {
+  letters: {
+    Ϩ: getLetterExplanation('Ϩ'),
+    Ϭ: getLetterExplanation('Ϭ'),
+    Ϯ: getLetterExplanation('Ϧ'),
+  },
+  exampleWords: [
+    {word: 'Ϩⲱⲥ', pronunciation: 'hos'},
+    {word: 'Ⲕⲁϩⲓ', pronunciation: 'kahi'},
+    {word: 'Ⲛⲟⲩϯ', pronunciation: 'nouti'},
+    {word: 'Ⲁⲣⲓϩ̀ⲙⲟⲧ', pronunciation: 'ariehmot'},
+    {word: 'Ϩⲓⲣⲏⲛⲏ', pronunciation: 'hireenee'},
+    {word: 'Ϭⲣⲟⲙⲡⲓ', pronunciation: 'chrompi'},
+    {word: 'Ϭⲟⲓⲥ', pronunciation: 'chois'},
+    {word: 'Ϣⲉⲡϩ̀ⲙⲟⲧ', pronunciation: 'shepehmot'},
+  ],
+  vocab: [
+    {word: 'Ⲫ̀ⲛⲟⲩϯ', translation: 'God'},
+    {word: 'Ϭⲣⲟⲙⲡⲓ', translation: 'Dove'},
+    {word: 'Ⲡ̀ϭⲟⲓⲥ', translation: 'The Lord'},
+    {word: 'Ⲡⲉⲛϭⲟⲓⲥ', translation: 'Our Lord'},
+    {word: 'Ϩⲱⲥ', translation: 'Praise'},
+    {word: 'Ⲕⲁϩⲓ', translation: 'Earth'},
+    {word: 'Ϯϩⲓⲣⲏⲛⲏ', translation: 'The Peace'},
+  ],
+  practiceWords: [
+    {word: 'Ϭⲓ', pronunciation: 'chi'},
+    {word: 'Ϩⲟϥ', pronunciation: 'hof'},
+    {word: 'Ⲧⲉⲕϩⲓⲣⲏⲛⲏ', pronunciation: 'tekhireenee'},
+    {word: 'Ⲫ̀ⲛⲟⲩϯ', pronunciation: 'ephnooti'},
+    {word: 'Ϧⲁⲧⲉⲛ', pronunciation: 'khaten'},
+    {word: 'Ⲣⲁⲥϯ', pronunciation: 'rasti'},
+  ],
+  practicePhrases: [
+    {
+      phrase: 'Ⲁⲣⲓϩ̀ⲙⲟⲧ ⲛⲁⲛ',
+      pronunciation: 'ariehmot nan',
+      translation: 'Grant us',
+    },
+    {
+      phrase: 'Ⲁⲕⲓ̀ ⲟⲩⲟϩ ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ',
+      pronunciation: 'ak-i oooh aksoti emmon',
+      translation: 'You came and saved us',
+    },
+    {
+      phrase: 'Ⲁϥⲓ̀ ⲟⲩⲟϩ ⲁϥⲥⲱϯ ̀ⲙⲙⲟⲛ',
+      pronunciation: 'af-i oooh afsoti emmon',
+      translation: 'He came and saved us',
+    },
+  ],
+};
+
 const lessonPlan = {
   1: lesson1,
   2: lesson2,
   3: lesson3,
   4: lesson4,
+  5: lesson5,
 };
 
 export default lessonPlan;

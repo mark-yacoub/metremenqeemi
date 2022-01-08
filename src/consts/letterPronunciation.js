@@ -20,6 +20,9 @@ export default LETTER_PRONUNCIATION = {
   Ϣ: 'Sh',
   Ϥ: 'F',
   Ϧ: 'Kh',
+  Ϩ: 'H as in Hotel',
+  Ϭ: 'Ch',
+  Ϯ: 'Ti',
   ⲞⲨ: 'OO as in Food',
   '⳿': 'Ⲉ if on a consonant or a glottal stop before the vowel if on a vowel',
 };
