@@ -8,7 +8,6 @@ const getComponentForLessonLevel1 = lessonNumber => {
     case 0:
       return <Level1Intro></Level1Intro>;
     case 1:
-    case 2:
       return <Level1LearningLetters lessonNumber={lessonNumber} />;
     default:
       return null;

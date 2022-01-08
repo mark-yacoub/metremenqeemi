@@ -29,44 +29,8 @@ const lesson1 = {
   ],
 };
 
-const lesson2 = {
-  letters: {
-    Ⲉ: getLetterExplanation('Ⲉ'),
-    Ⲩ: getLetterExplanation('Ⲩ'),
-    Ⲟ: getLetterExplanation('Ⲟ'),
-    Ⲱ: getLetterExplanation('Ⲱ'),
-    Ⲕ: getLetterExplanation('Ⲕ'),
-    Ⲙ: getLetterExplanation('Ⲙ'),
-  },
-  practiceWords: [
-    {word: 'Ⲛⲉⲙ', pronunciation: 'nem'},
-    {word: 'Ⲛⲓⲙ', pronunciation: 'nim'},
-    {word: 'Ⲕⲉ', pronunciation: 'ke'},
-    {word: 'Ⲙⲟⲓ', pronunciation: 'moy'},
-    {word: 'Ⲛⲁⲕ', pronunciation: 'nak'},
-    {word: 'Ⲕⲁⲛ', pronunciation: 'kan'},
-    {word: 'Ⲙⲉⲛ', pronunciation: 'men'},
-    {word: 'Ⲛⲉⲙⲁⲛ', pronunciation: 'neman'},
-  ],
-  vocab: [
-    {word: 'Ⲛⲉⲙ', translation: 'And'},
-    {word: 'Ⲣⲁⲛ', translation: 'Name'},
-    {word: 'Ⲁⲛⲟⲛ', translation: 'We'},
-    {word: 'Ⲁⲛⲟⲕ', translation: 'I'},
-  ],
-  practicePhrases: [
-    {
-      phrase: 'Ⲁⲣⲓ ⲟⲩⲛⲁⲓ ⲛⲉⲙⲁⲛ',
-      pronunciation: 'ari ounay neman',
-      translation: 'Have mercy upon us',
-    },
-    {phrase: 'Ⲙⲟⲓ ⲛⲁⲛ', pronunciation: 'moy nan', translation: 'Give us'},
-  ],
-};
-
 const lessonPlan = {
   1: lesson1,
-  2: lesson2,
 };
 
 export default lessonPlan;

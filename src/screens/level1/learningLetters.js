@@ -60,27 +60,6 @@ const Level1LearningLetters = ({lessonNumber}) => {
     return practiceWordsViews;
   };
 
-  renderVocab = vocabWords => {
-    const vocabWordsViews = [];
-    // Render Header
-    vocabWordsViews.push(
-      <View key={'header'} style={{flexDirection: 'row'}}>
-        <Text>Word</Text>
-        <Text>Word translation</Text>
-      </View>,
-    );
-    // Render Vocab Words
-    for (const vocabWord of vocabWords) {
-      vocabWordsViews.push(
-        <View key={vocabWord.word} style={{flexDirection: 'row'}}>
-          <Text>{vocabWord.word}</Text>
-          <Text>{vocabWord.translation}</Text>
-        </View>,
-      );
-    }
-    return vocabWordsViews;
-  };
-
   const renderPracticePhrases = practicePhrases => {
     const practicePhrasesViews = [];
     // Render Header
@@ -107,7 +86,6 @@ const Level1LearningLetters = ({lessonNumber}) => {
     <>
       {renderLetters(lessonPlan.letters)}
       {renderPracticeWords(lessonPlan.practiceWords)}
-      {lessonPlan.vocab && renderVocab(lessonPlan.vocab)}
       {renderPracticePhrases(lessonPlan.practicePhrases)}
     </>
   );
