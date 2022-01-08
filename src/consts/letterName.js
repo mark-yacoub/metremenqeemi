@@ -21,6 +21,9 @@ export default LETTER_NAME = {
   Ϣ: 'Shay',
   Ϥ: 'Fay',
   Ϧ: 'Khay',
+  Ϩ: 'Hoori',
+  Ϭ: 'Cheema',
+  Ϯ: 'Ti',
   ⲞⲨ: 'Omicron-Upsilon',
   '⳿': 'Jinkim',
 };
