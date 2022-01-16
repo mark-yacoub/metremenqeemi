@@ -6,9 +6,9 @@ import level2Router from '../utils/levelRouters/level2';
 import level3Router from '../utils/levelRouters/level3';
 import level4Router from '../utils/levelRouters/level4';
 
-const Lesson = ({level, lessonNumber}) => {
+const Lesson = props => {
   const loadingScreen = () => <Text>Loading...</Text>;
-
+  console.log(props);
   const getComponentForLesson = (levelNumber, lessonNumber) => {
     switch (levelNumber) {
       case 1:
