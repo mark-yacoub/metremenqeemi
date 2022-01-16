@@ -2,7 +2,7 @@ import React from 'react';
 import {FlatList, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import {DATA_LEVEL_OVERVIEW} from '../consts/lessons';
 
-const LeessonsList = ({navigation}) => {
+const LessonsList = ({navigation}) => {
   return (
     <View style={styles.container}>
       <FlatList
@@ -11,7 +11,7 @@ const LeessonsList = ({navigation}) => {
           return (
             <TouchableOpacity
               onPress={() => {
-                switch (item.key) {
+                switch (item) {
                   case 'Lesson0':
                     navigation.navigate('Lesson 0');
                     break;
@@ -20,11 +20,10 @@ const LeessonsList = ({navigation}) => {
                 }
               }}
             >
-              <Text style={styles.lessonTitle}>{item.key}</Text>
+              <Text style={styles.lessonTitle}>{item}</Text>
             </TouchableOpacity>
           );
         }}
-        keyExtractor={item => item.key}
       />
     </View>
   );
@@ -40,4 +39,4 @@ const styles = StyleSheet.create({
     height: 44,
   },
 });
-export default LeessonsList;
+export default LessonsList;
