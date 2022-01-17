@@ -1,29 +1,31 @@
 import React from 'react';
 import {FlatList, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+
 import {DATA_LEVEL_OVERVIEW} from '../consts/lessons';
 
+const renderLesson = ({item, navigation}) => {
+  return (
+    <TouchableOpacity
+      onPress={() => {
+        switch (item) {
+          case 'Lesson0':
+            navigation.navigate('Level1Lesson');
+            break;
+          default:
+            alert(console.log(item));
+        }
+      }}
+    >
+      <Text style={styles.lessonTitle}>{item}</Text>
+    </TouchableOpacity>
+  );
+};
 const LessonsList = ({navigation}) => {
   return (
     <View style={styles.container}>
       <FlatList
         data={DATA_LEVEL_OVERVIEW}
-        renderItem={({item}) => {
-          return (
-            <TouchableOpacity
-              onPress={() => {
-                switch (item) {
-                  case 'Lesson0':
-                    navigation.navigate('Lesson 0');
-                    break;
-                  default:
-                    alert(console.log(item));
-                }
-              }}
-            >
-              <Text style={styles.lessonTitle}>{item}</Text>
-            </TouchableOpacity>
-          );
-        }}
+        renderItem={({item}) => renderLesson({item, navigation})}
       />
     </View>
   );

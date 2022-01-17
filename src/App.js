@@ -7,7 +7,7 @@ import {
   Level2Navigation,
   Level3Navigation,
   Level4Navigation,
-} from './DrawerScreenNavigators';
+} from './levelNavigators';
 
 const HomeScreen = ({navigation}) => (
   <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -29,7 +29,7 @@ const Drawer = createDrawerNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator name='Drawer' initialRouteName='Home'>
+      <Drawer.Navigator initialRouteName='Home'>
         <Drawer.Screen name='Home' component={HomeScreen} />
         <Drawer.Screen name='Level One' component={Level1Navigation} />
         <Drawer.Screen name='Level Two' component={Level2Navigation} />
