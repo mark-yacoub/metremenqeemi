@@ -2,6 +2,8 @@ import * as React from 'react';
 import {Button, View} from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {NavigationContainer} from '@react-navigation/native';
+
+import ProgressBar from './utils/progressbar';
 import {
   Level1Navigation,
   Level2Navigation,
@@ -11,6 +13,7 @@ import {
 
 const HomeScreen = ({navigation}) => (
   <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <ProgressBar></ProgressBar>
     <Button
       onPress={() => navigation.navigate('Level One', {screen: 'Overview'})}
       title='Go to Level One'
