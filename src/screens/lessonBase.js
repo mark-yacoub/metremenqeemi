@@ -1,12 +1,15 @@
 import React, {Suspense} from 'react';
 import {Text} from 'react-native';
+import PropTypes from 'prop-types';
 
 import leve1Router from '../utils/levelRouters/level1';
 import level2Router from '../utils/levelRouters/level2';
 import level3Router from '../utils/levelRouters/level3';
 import level4Router from '../utils/levelRouters/level4';
 
-const Lesson = props => {
+const Lesson = ({route}) => {
+  const {levelNumber, lessonNumber} = route.params;
+
   const loadingScreen = () => <Text>Loading...</Text>;
   const getComponentForLesson = (levelNumber, lessonNumber) => {
     switch (levelNumber) {
@@ -24,7 +27,20 @@ const Lesson = props => {
     }
   };
 
-  return <Suspense fallback={loadingScreen()}>{getComponentForLesson(1, 5)}</Suspense>;
+  return (
+    <Suspense fallback={loadingScreen()}>
+      {getComponentForLesson(levelNumber, lessonNumber)}
+    </Suspense>
+  );
+};
+
+Lesson.propTypes = {
+  route: PropTypes.shape({
+    params: PropTypes.exact({
+      levelNumber: PropTypes.number.isRequired,
+      lessonNumber: PropTypes.number.isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default Lesson;

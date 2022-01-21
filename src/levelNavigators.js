@@ -1,16 +1,20 @@
 import * as React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import LessonsList from './screens/LessonsList';
-import Lesson from './screens/lessonBase';
+import LessonsListScreen from './screens/LessonsList';
+import LessonScreen from './screens/lessonBase';
 
 const Stack = createStackNavigator();
 
 const Level1Navigation = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name='Overview' component={LessonsList} />
-      <Stack.Screen name='Level1Lesson' component={Lesson} options={{headerShown: true}} />
+      <Stack.Screen
+        name='LessonsListScreen'
+        component={LessonsListScreen}
+        initialParams={{levelNumber: 1}}
+      />
+      <Stack.Screen name='LessonScreen' component={LessonScreen} options={{headerShown: true}} />
     </Stack.Navigator>
   );
 };
@@ -18,7 +22,11 @@ const Level1Navigation = () => {
 const Level2Navigation = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name='Overview' component={LessonsList} />
+      <Stack.Screen
+        name='LessonsListScreen'
+        component={LessonsListScreen}
+        initialParams={{levelNumber: 2}}
+      />
     </Stack.Navigator>
   );
 };
@@ -26,7 +34,11 @@ const Level2Navigation = () => {
 const Level3Navigation = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name='Overview' component={LessonsList} />
+      <Stack.Screen
+        name='LessonsListScreen'
+        component={LessonsListScreen}
+        initialParams={{levelNumber: 3}}
+      />
     </Stack.Navigator>
   );
 };
@@ -34,7 +46,11 @@ const Level3Navigation = () => {
 const Level4Navigation = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name='Overview' component={LessonsList} />
+      <Stack.Screen
+        name='LessonsListScreen'
+        component={LessonsListScreen}
+        initialParams={{levelNumber: 4}}
+      />
     </Stack.Navigator>
   );
 };
