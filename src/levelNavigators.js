@@ -13,8 +13,13 @@ const Level1Navigation = () => {
         name='LessonsListScreen'
         component={LessonsListScreen}
         initialParams={{levelNumber: 1}}
+        options={{title: 'Overview'}}
       />
-      <Stack.Screen name='LessonScreen' component={LessonScreen} options={{headerShown: true}} />
+      <Stack.Screen
+        name='LessonScreen'
+        component={LessonScreen}
+        options={({route}) => ({title: `Lesson ${route.params.lessonNumber}`, headerShown: true})}
+      />
     </Stack.Navigator>
   );
 };
