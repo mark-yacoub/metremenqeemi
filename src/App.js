@@ -3,7 +3,6 @@ import {Button, View} from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {NavigationContainer} from '@react-navigation/native';
 
-import ProgressBar from './utils/progressbar';
 import {
   Level1Navigation,
   Level2Navigation,
@@ -11,9 +10,11 @@ import {
   Level4Navigation,
 } from './levelNavigators';
 
+import ProgressBar from './components/progressBar';
+
 const HomeScreen = ({navigation}) => (
-  <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-    <ProgressBar></ProgressBar>
+  <View style={{flexDirection: 'column', alignItems: 'center'}}>
+    <ProgressBar />
     <Button
       onPress={() => navigation.navigate('Level One', {screen: 'Overview'})}
       title='Go to Level One'
@@ -22,7 +23,7 @@ const HomeScreen = ({navigation}) => (
 );
 
 const About = ({navigation}) => (
-  <View style={{flex: 1, alignItems: ' center', justifyContent: ' center'}}>
+  <View style={{flex: 1, alignItems: ' center', justifyContent: 'center'}}>
     <Button onPress={() => navigation.goBack()} title='Go back home' />
   </View>
 );
