@@ -1,8 +1,11 @@
 export default LETTER_PRONUNCIATION = {
   Ⲁ: 'A as in Car',
+  Ⲃ: 'V if followed by a vowel, B otherwise',
+  Ⲇ: 'D in proper nouns, DH (in English: TH as in mother) otherwise',
   Ⲉ: 'E as in Let',
   Ⲍ: 'Z',
   Ⲏ: 'long EE as in Feet',
+  Ⲑ: 'Th as in Theology, T if preceded by Ⲥ or Ϣ',
   Ⲓ: 'short I as in Fit & Y as in Yo',
   Ⲕ: 'K',
   Ⲙ: 'M',

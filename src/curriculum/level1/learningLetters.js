@@ -216,12 +216,61 @@ const lesson5 = {
   ],
 };
 
+const lesson7 = {
+  letters: {
+    Ⲃ: getLetterExplanation('Ⲃ'),
+    Ⲇ: getLetterExplanation('Ⲇ'),
+    Ⲑ: getLetterExplanation('Ⲑ'),
+  },
+  exampleWords: [
+    {word: 'Ⲃⲁⲗ', pronunciation: 'val'},
+    {word: 'Ⲁⲇⲁⲙ', pronunciation: 'adam'},
+    {word: 'Ⲛⲓⲃⲉⲛ', pronunciation: 'niven'},
+    {word: 'Ⲡⲣⲉⲥⲃⲓⲁ', pronunciation: 'presvya'},
+    {word: 'Ⲑⲁⲓ', pronunciation: 'thai'},
+    {word: 'Ⲥⲑⲟⲓ', pronunciation: 'stoy'},
+    {word: 'Ⲉⲡⲓⲇⲓ', pronunciation: 'epidhi'},
+    {word: 'Ϣⲑⲁⲙ', pronunciation: 'shtam'},
+  ],
+  vocab: [
+    {word: 'Ⲑⲁⲓ', translation: 'This (feminine)'},
+    {word: 'Ⲥⲑⲟⲓⲛⲟⲩϥⲓ', translation: 'Incense'},
+    {word: 'Ⲇⲟⲝⲁ', translation: 'Glory'},
+    {word: 'Ⲉⲑⲟⲩⲁⲃ', translation: 'Holy'},
+    {word: 'Ϯⲑⲉⲟⲧⲟⲕⲟⲥ', translation: 'The Theotokos'},
+    {word: 'Ϯⲡⲁⲣⲑⲉⲛⲟⲥ', translation: 'The virgin'},
+  ],
+  practiceWords: [
+    {word: 'Ⲃⲁⲕⲓ', pronunciation: 'vaki'},
+    {word: 'Ⲇⲱⲣⲟⲛ', pronunciation: 'dhoron'},
+    {word: 'Ⲑⲁⲙⲓⲟ', pronunciation: 'thamyo'},
+    {word: 'Ⲉⲑⲟⲩⲁⲃ', pronunciation: 'ethooab'},
+    {word: 'Ⲇⲟⲝⲁ', pronunciation: 'dhoxa'},
+    {word: 'Ⲥⲑⲟⲓⲛⲟⲩϥⲓ', pronunciation: 'stoynoofi'},
+    {word: 'Ⲃⲉⲛⲓ', pronunciation: 'veni'},
+    {word: 'Ⲛⲟⲩⲃ', pronunciation: 'noob'},
+  ],
+  practicePhrases: [
+    {
+      phrase: 'Ϯϣⲟⲩⲣⲏ ⲛ̀ⲛⲟⲩⲃ ⲧⲉ ϯⲡⲁⲣⲑⲉⲛⲟⲥ',
+      pronunciation: 'tishooree ennoob te tiparthenos',
+      translation: 'The golden censer is the virgin',
+    },
+    {
+      phrase: 'Ⲫⲁⲓ ⲡⲉ ⲡⲓⲉϩⲟⲟⲩ ⲉⲧⲁ ⲡ̀ϭⲟⲓⲥ ⲑⲁⲙⲓⲟϥ',
+      pronunciation: 'phay pe pieho-oo eta epchois thamyof',
+      translation: 'This is the day that the Lord has made',
+    },
+  ],
+};
+
 const lessonPlan = {
   1: lesson1,
   2: lesson2,
   3: lesson3,
   4: lesson4,
   5: lesson5,
+  7: lesson7,
 };
 
 export default lessonPlan;
