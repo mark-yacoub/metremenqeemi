@@ -1,8 +1,11 @@
 export default LETTER_NAME = {
   Ⲁ: 'Alpha',
+  Ⲃ: 'Beta',
+  Ⲇ: 'Delta',
   Ⲉ: 'Ey',
   Ⲍ: 'Zeta',
   Ⲏ: 'Eta',
+  Ⲑ: 'Theta',
   Ⲓ: 'Yota',
   Ⲕ: 'Kappa',
   Ⲗ: 'Lavla',
