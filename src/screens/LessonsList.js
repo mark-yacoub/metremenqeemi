@@ -3,6 +3,7 @@ import {FlatList, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import PropTypes from 'prop-types';
 
 import LEVEL_1_LESSONS_LIST from '../curriculum/level1/lessonsList';
+import ProgressBar from '../components/progressBar';
 
 const lessonsList = {
   1: LEVEL_1_LESSONS_LIST,
@@ -23,6 +24,7 @@ const LessonsList = ({route, navigation}) => {
 
   return (
     <View style={styles.container}>
+      <ProgressBar />
       <FlatList
         data={lessonsList[levelNumber]}
         renderItem={({item, index}) => renderLessonName(item, index)}

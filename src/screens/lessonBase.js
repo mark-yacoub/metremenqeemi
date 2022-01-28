@@ -6,6 +6,7 @@ import leve1Router from '../utils/levelRouters/level1';
 import level2Router from '../utils/levelRouters/level2';
 import level3Router from '../utils/levelRouters/level3';
 import level4Router from '../utils/levelRouters/level4';
+import ProgressBar from '../components/progressBar';
 
 const Lesson = ({route}) => {
   const {levelNumber, lessonNumber} = route.params;
@@ -29,6 +30,7 @@ const Lesson = ({route}) => {
 
   return (
     <Suspense fallback={loadingScreen()}>
+      <ProgressBar />
       {getComponentForLesson(levelNumber, lessonNumber)}
     </Suspense>
   );
