@@ -9,8 +9,11 @@ import {
   Level4Navigation,
 } from './levelNavigators';
 
+import ProgressBar from './components/progressBar';
+
 const HomeScreen = ({navigation}) => (
-  <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+  <View style={{flexDirection: 'column', alignItems: 'center'}}>
+    <ProgressBar />
     <Button
       onPress={() => navigation.navigate('Level One', {screen: 'Overview'})}
       title='Go to Level One'
