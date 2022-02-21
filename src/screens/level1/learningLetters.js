@@ -1,5 +1,6 @@
 import React from 'react';
-import {View, Text, TextInput, SafeAreaView, ScrollView, StyleSheet, StatusBar} from 'react-native';
+import {View, Text, TextInput, SafeAreaView, ScrollView} from 'react-native';
+import {withTheme} from 'react-native-paper';
 
 import PropTypes from 'prop-types';
 
@@ -104,8 +105,8 @@ const Level1LearningLetters = ({lessonNumber}) => {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView}>
+    <SafeAreaView style={{flex: 1}}>
+      <ScrollView style={{marginHorizontal: 20}}>
         {renderLetters(lessonPlan.letters)}
         {renderPracticeWords(lessonPlan.exampleWords)}
         {lessonPlan.vocab && renderVocab(lessonPlan.vocab)}
@@ -120,17 +121,4 @@ Level1LearningLetters.propTypes = {
   lessonNumber: PropTypes.number.isRequired,
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: StatusBar.currentHeight,
-  },
-  scrollView: {
-    marginHorizontal: 20,
-  },
-  text: {
-    fontSize: 42,
-  },
-});
-
-export default Level1LearningLetters;
+export default withTheme(Level1LearningLetters);

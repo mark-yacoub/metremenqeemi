@@ -1,5 +1,6 @@
 import React from 'react';
-import {FlatList, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import {FlatList, Text, View, TouchableOpacity} from 'react-native';
+import {withTheme} from 'react-native-paper';
 import PropTypes from 'prop-types';
 
 import LEVEL_1_LESSONS_LIST from '../curriculum/level1/lessonsList';
@@ -9,7 +10,7 @@ const lessonsList = {
   1: LEVEL_1_LESSONS_LIST,
 };
 
-const LessonsList = ({route, navigation}) => {
+const LessonsList = ({route, navigation, theme}) => {
   const {levelNumber} = route.params;
 
   const renderLessonName = (lessonName, lessonNumber) => {
@@ -17,13 +18,22 @@ const LessonsList = ({route, navigation}) => {
       <TouchableOpacity
         onPress={() => navigation.navigate('LessonScreen', {levelNumber, lessonNumber})}
       >
-        <Text style={styles.lessonName}>{lessonName}</Text>
+        <Text
+          style={{
+            color: theme.colors.primary,
+            fontSize: theme.fontSize,
+            height: theme.height,
+            padding: theme.padding,
+          }}
+        >
+          {lessonName}
+        </Text>
       </TouchableOpacity>
     );
   };
 
   return (
-    <View style={styles.container}>
+    <View style={{flex: 1}}>
       <ProgressBar />
       <FlatList
         data={lessonsList[levelNumber]}
@@ -32,17 +42,6 @@ const LessonsList = ({route, navigation}) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  lessonName: {
-    padding: 10,
-    fontSize: 18,
-    height: 44,
-  },
-});
 
 LessonsList.propTypes = {
   navigation: PropTypes.shape({
@@ -55,4 +54,4 @@ LessonsList.propTypes = {
   }).isRequired,
 };
 
-export default LessonsList;
+export default withTheme(LessonsList);
