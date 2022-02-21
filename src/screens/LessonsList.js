@@ -13,6 +13,19 @@ const lessonsList = {
 const LessonsList = ({route, navigation, theme}) => {
   const {levelNumber} = route.params;
 
+  const renderSeperator = () => {
+    return (
+      <View
+        style={{
+          height: theme.seperator.height,
+          width: theme.seperator.width,
+          marginLeft: theme.seperator.marginLeft,
+          backgroundColor: theme.colors.gold,
+        }}
+      />
+    );
+  };
+
   const renderLessonName = (lessonName, lessonNumber) => {
     return (
       <TouchableOpacity
@@ -38,6 +51,7 @@ const LessonsList = ({route, navigation, theme}) => {
       <FlatList
         data={lessonsList[levelNumber]}
         renderItem={({item, index}) => renderLessonName(item, index)}
+        ItemSeparatorComponent={renderSeperator}
       />
     </View>
   );
