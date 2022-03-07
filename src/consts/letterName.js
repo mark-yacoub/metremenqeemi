@@ -1,6 +1,7 @@
 export default LETTER_NAME = {
   Ⲁ: 'Alpha',
   Ⲃ: 'Beta',
+  Ⲅ: 'Ghamma',
   Ⲇ: 'Delta',
   Ⲉ: 'Ey',
   Ⲍ: 'Zeta',
@@ -18,7 +19,9 @@ export default LETTER_NAME = {
   Ⲥ: 'Seema',
   Ⲧ: 'Tav',
   Ⲩ: 'Upsilon',
+  ⲩ: 'Upsilon',
   Ⲫ: 'Phey',
+  Ⲭ: 'Qey',
   Ⲯ: 'Psey',
   Ⲱ: 'Omega',
   Ϣ: 'Shay',
