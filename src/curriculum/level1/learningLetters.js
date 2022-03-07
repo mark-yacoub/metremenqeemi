@@ -264,6 +264,53 @@ const lesson7 = {
   ],
 };
 
+const lesson8 = {
+  letters: {
+    ⲥ: getLetterExplanation('ⲥ'),
+    ⲧ: getLetterExplanation('ⲧ'),
+    Ϫ: getLetterExplanation('Ϫ'),
+  },
+  exampleWords: [
+    {word: 'Ϩⲓϫⲉⲛ', pronunciation: 'hijen'},
+    {word: 'Ⲡⲗⲁⲥⲙⲁ', pronunciation: 'plazma'},
+    {word: 'Ⲉⲛⲧⲟⲗⲏ', pronunciation: 'endolee'},
+    {word: 'Ⲥⲙⲟⲩ', pronunciation: 'smoo'},
+    {word: 'Ϫⲱⲣ', pronunciation: 'goor'},
+    {word: 'Ⲉⲛⲧⲏⲙⲁ', pronunciation: 'endeema'},
+    {word: 'Ⲕⲟⲥⲙⲟⲥ', pronunciation: 'kozmos'},
+    {word: 'Ⲥⲙⲏ', pronunciation: 'smee'},
+  ],
+  vocab: [
+    {word: 'Ⲥ̀ⲙⲟⲩ', translation: 'Bless'},
+    {word: 'Ⲕⲟⲥⲙⲟⲥ', translation: 'World'},
+    {word: 'Ⲕ̀ⲥ̀ⲙⲁⲣⲱⲟⲩⲧ', translation: 'Blessed Are You'},
+    {word: 'Ϫⲟⲙ', translation: 'Power'},
+    {word: 'Ϫⲱⲙ', translation: 'Book'},
+  ],
+  practiceWords: [
+    {word: 'Ⲕⲟⲩϫⲓ', pronunciation: 'kouji'},
+    {word: 'Ϫⲁϫⲓ', pronunciation: 'gaji'},
+    {word: 'Ⲡⲓⲣⲁⲥⲙⲟⲥ', pronunciation: 'pirazmos'},
+    {word: 'Ⲕ̀ⲥ̀ⲙⲁⲣⲱⲟⲩⲧ', pronunciation: 'ekesmaroo-oot'},
+    {word: 'Ⲧⲣⲁⲡⲉⲍⲁ', pronunciation: 'trapeza'},
+    {word: 'Ϫⲱⲙ', pronunciation: 'goom'},
+    {word: 'Ⲥⲁϫⲓ', pronunciation: 'saji'},
+    {word: 'Ϫⲟⲙ', pronunciation: 'gom'},
+  ],
+  practicePhrases: [
+    {
+      phrase: 'Ϫⲱⲣ ⲉⲃⲟⲗ ⲛ̀ⲛⲓϫⲁϫⲓ ⲛ̀ⲧⲉ ϯⲉⲕⲕⲗⲏⲥⲓⲁ',
+      pronunciation: 'goor evol ennigagi ente tiekkleesya',
+      translation: 'Disperse the enemies of the Church',
+    },
+    {
+      phrase: 'Ⲛ̀ⲧⲉϥⲥ̀ⲙⲟⲩ ⲉⲣⲟⲛ ⲧⲏⲣⲉⲛ ⲛ̀ⲧⲉϥⲧⲟⲩⲃⲟ ⲛ̀ⲛⲉⲛϩⲏⲧ',
+      pronunciation: 'entefesmoo eron teeren enteftoovo ennenheet',
+      translation: 'That He may bless us all and purify our hearts',
+    },
+  ],
+};
+
 const lesson9 = {
   letters: {
     Ⲅ: getLetterExplanation('Ⲅ'),
@@ -319,6 +366,7 @@ const lessonPlan = {
   4: lesson4,
   5: lesson5,
   7: lesson7,
+  8: lesson8,
   9: lesson9,
 };
 
