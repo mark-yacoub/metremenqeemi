@@ -264,6 +264,54 @@ const lesson7 = {
   ],
 };
 
+const lesson9 = {
+  letters: {
+    Ⲅ: getLetterExplanation('Ⲅ'),
+    ⲩ: getLetterExplanation('ⲩ'),
+    Ⲭ: getLetterExplanation('Ⲭ'),
+  },
+  exampleWords: [
+    {word: 'Ⲁⲅⲁⲡⲏ', pronunciation: 'aghapee'},
+    {word: 'Ⲯⲩⲭⲏ', pronunciation: 'psyshee'},
+    {word: 'Ⲭⲏⲙⲓ', pronunciation: 'qeemi'},
+    {word: 'Ⲕⲩⲣⲓⲟⲥ', pronunciation: 'kyryos'},
+    {word: 'Ⲭⲉⲣⲟⲩⲃⲓⲙ', pronunciation: 'sheroobim'},
+  ],
+  vocab: [
+    {word: 'Ⲁⲅⲁⲡⲏ', translation: 'Love'},
+    {word: 'Ⲯⲩⲭⲏ', translation: 'Soul'},
+    {word: 'Ⲁⲅⲅⲉⲗⲟⲥ', translation: 'Angel'},
+    {word: 'Ⲭⲏⲙⲓ', translation: 'Egypt'},
+    {word: 'Ⲉⲩⲁⲅⲅⲉⲗⲟⲥ', translation: 'Gospel'},
+    {word: 'ⲠⲓⲬⲣⲓⲥⲧⲟⲥ', translation: 'The Christ'},
+    {word: 'Ⲭⲉⲣⲉ', translation: 'Hail'},
+    {word: 'Ⲕⲩⲣⲓⲉ Ⲉⲗⲉⲏⲥⲟⲛ', translation: 'Lord Have Mercy'},
+    {word: 'Ⲕⲩⲣⲓⲟⲥ', translation: 'Lord'},
+  ],
+  practiceWords: [
+    {word: 'Ⲅⲛⲟⲫⲟⲥ', pronunciation: 'ghnophos'},
+    {word: 'Ⲭⲣⲱⲙ', pronunciation: 'qroom'},
+    {word: 'Ⲭⲉⲣⲉ', pronunciation: 'shere'},
+    {word: 'Ⲡⲣⲟⲥⲉⲩⲭⲏ', pronunciation: 'prosevshee'},
+    {word: 'Ⲅⲣⲁⲫⲏ', pronunciation: 'ghraphee'},
+    {word: 'Ⲅⲉⲛⲟⲥ', pronunciation: 'genos'},
+    {word: 'Ⲭⲱⲣⲁ', pronunciation: 'qoora'},
+    {word: 'Ⲭⲣⲓⲥⲧⲟⲥ', pronunciation: 'khristos'},
+  ],
+  practicePhrases: [
+    {
+      phrase: 'Ϯⲃⲁⲕⲓ ⲛ̀ⲧⲉ Ⲫ̀ⲛⲟⲩϯ Ⲁⲗⲗⲏⲗⲟⲩⲓⲁ',
+      pronunciation: 'tivaki ente ephnooti Alleelooya',
+      translation: 'The City of God Alleluia',
+    },
+    {
+      phrase: 'Ⲥⲓⲱⲛ ϯⲙⲁⲩ ⲛⲁϫⲟⲥ',
+      pronunciation: 'syoon timav nagos',
+      translation: 'Zion the mother will say',
+    },
+  ],
+};
+
 const lessonPlan = {
   1: lesson1,
   2: lesson2,
@@ -271,6 +319,7 @@ const lessonPlan = {
   4: lesson4,
   5: lesson5,
   7: lesson7,
+  9: lesson9,
 };
 
 export default lessonPlan;

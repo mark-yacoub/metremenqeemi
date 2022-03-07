@@ -1,6 +1,7 @@
 export default LETTER_PRONUNCIATION = {
   Ⲁ: 'A as in Car',
   Ⲃ: 'V if followed by a vowel, B otherwise',
+  Ⲅ: 'G if followed by ⲉ-ⲓ-ⲏ-ⲩ\nN if followed by ⲅ-ⲕ-ⲭ-ⲝ\nGH otherwise',
   Ⲇ: 'D in proper nouns, DH (in English: TH as in mother) otherwise',
   Ⲉ: 'E as in Let',
   Ⲍ: 'Z',
@@ -17,7 +18,9 @@ export default LETTER_PRONUNCIATION = {
   Ⲥ: 'S',
   Ⲧ: 'T',
   Ⲩ: 'y as in Hymn',
+  ⲩ: 'V if preceded by ⲁ-ⲉ\nOO when combined with ⲟ\nY as in Hymn otherwise',
   Ⲫ: 'Ph',
+  Ⲭ: 'Q in Coptic nouns\nSH when followed by ⲉ-ⲓ-ⲏ-ⲩ in Greek nouns\nKH otherwise in Greek nouns',
   Ⲯ: 'Ps',
   Ⲱ: 'Long O as in Hope',
   Ϣ: 'Sh',
