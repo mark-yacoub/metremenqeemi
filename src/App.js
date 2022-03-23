@@ -1,26 +1,19 @@
 import * as React from 'react';
 import {Button, View} from 'react-native';
+
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {NavigationContainer} from '@react-navigation/native';
 import {DefaultTheme, Provider as PaperProvider} from 'react-native-paper';
+
+import HomeScreen from './screens/home';
+
 import {
   Level1Navigation,
   Level2Navigation,
   Level3Navigation,
   Level4Navigation,
 } from './levelNavigators';
-
-import ProgressBar from './components/progressBar';
-
-const HomeScreen = ({navigation}) => (
-  <View style={{flexDirection: 'column', alignItems: 'center'}}>
-    <ProgressBar />
-    <Button
-      onPress={() => navigation.navigate('Level One', {screen: 'Overview'})}
-      title='Go to Level One'
-    />
-  </View>
-);
+import ROUTES from './routes';
 
 const About = ({navigation}) => (
   <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -32,10 +25,10 @@ const theme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-
-    primary: '#0B0B0B',
-    accent: '#FEC203',
-    gold: '#FEC203',
+    // values generated from: https://www.sessions.edu/color-calculator/
+    primary: '#2a78ff',
+    secondary: '#8e04ff',
+    tertiary: '#ff8a04',
   },
   dark: false,
   fontSize: 18,
@@ -54,13 +47,13 @@ export default function App() {
   return (
     <PaperProvider theme={theme}>
       <NavigationContainer>
-        <Drawer.Navigator initialRouteName='Home'>
-          <Drawer.Screen name='Home' component={HomeScreen} />
-          <Drawer.Screen name='Level One' component={Level1Navigation} />
-          <Drawer.Screen name='Level Two' component={Level2Navigation} />
-          <Drawer.Screen name='Level Three' component={Level3Navigation} />
-          <Drawer.Screen name='Level Four' component={Level4Navigation} />
-          <Drawer.Screen name='About' component={About} />
+        <Drawer.Navigator>
+          <Drawer.Screen name={ROUTES.HOME} component={HomeScreen} />
+          <Drawer.Screen name={ROUTES.LEVEL_1} component={Level1Navigation} />
+          <Drawer.Screen name={ROUTES.LEVEL_2} component={Level2Navigation} />
+          <Drawer.Screen name={ROUTES.LEVEL_3} component={Level3Navigation} />
+          <Drawer.Screen name={ROUTES.LEVEL_4} component={Level4Navigation} />
+          <Drawer.Screen name={ROUTES.ABOUT} component={About} />
         </Drawer.Navigator>
       </NavigationContainer>
     </PaperProvider>
