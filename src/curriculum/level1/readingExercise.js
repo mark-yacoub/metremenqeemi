@@ -46,8 +46,163 @@ const lesson6 = [
   },
 ];
 
+const lesson10 = [
+  {
+    phrase: 'Ⲡⲉⲛⲓⲱⲧ',
+    pronunciation: 'penyoot',
+    translation: 'Our Father',
+  },
+  {
+    phrase: 'Ⲛⲓⲫⲏⲟⲩⲓ',
+    pronunciation: 'nipheeooi',
+    translation: 'The Heavens',
+  },
+  {
+    phrase: 'Ⲡⲉⲕⲣⲁⲛ',
+    pronunciation: 'pekran',
+    translation: 'Your name',
+  },
+  {
+    phrase: 'Ϧⲉⲛ',
+    pronunciation: 'khen',
+    translation: 'in/by',
+  },
+  {
+    phrase: 'Ⲧ̀ⲫⲉ',
+    pronunciation: 'etphe',
+    translation: 'The Heaven',
+  },
+  {
+    phrase: 'Ⲛⲉⲙ',
+    pronunciation: 'nem',
+    translation: 'and/with',
+  },
+  {
+    phrase: 'Ⲡⲓⲕⲁϩⲓ',
+    pronunciation: 'pikahi',
+    translation: 'The Earth/the ground 🌍',
+  },
+  {
+    phrase: 'Ⲡⲉⲛ ⲱⲓⲕ',
+    pronunciation: 'pen ooyk',
+    translation: 'Our bread 🍞',
+  },
+  {
+    phrase: 'Ⲣⲁⲥϯ',
+    pronunciation: 'rasti',
+    translation: 'Tomorrow',
+  },
+  {
+    phrase: 'Ϯϫⲟⲙ',
+    pronunciation: 'tigom',
+    translation: 'The power 💪',
+  },
+  {
+    phrase: 'Ϥⲱⲧⲉ',
+    pronunciation: 'foote',
+    translation: 'Towel (footah)',
+  },
+  {
+    phrase: 'Ⲫⲉϧ',
+    pronunciation: 'phekh',
+    translation: 'Watermelon 🍉',
+  },
+  {
+    phrase: 'Ϫⲓϫ',
+    pronunciation: 'jig',
+    translation: 'Hand 🖐',
+  },
+  {
+    phrase: 'Ϭⲁϫ',
+    pronunciation: 'chag',
+    translation: 'Bird 🐦',
+  },
+  /**/
+  {
+    phrase: 'Ⲁⲙⲱⲓⲛⲓ ⲙⲁⲣⲉⲛ ⲟⲩⲱϣⲧ',
+    pronunciation: 'amooyni maren oo-oosht',
+    translation: 'Come let us worship',
+  },
+  {
+    phrase: 'Ⲛ̀ϯⲧⲣⲓⲁⲥ ⲉⲑⲟⲩⲁⲃ',
+    pronunciation: 'entitrias ethooab',
+    translation: 'the Holy Trinity',
+  },
+  {
+    phrase: 'Ⲉⲧⲉ ⲫ̀ⲓⲱⲧ ⲛⲉⲙ ⲡ̀ϣⲏⲣⲓ',
+    pronunciation: 'ete ephyoot nem epsheeri',
+    translation: 'that is the Father and the Son',
+  },
+  {
+    phrase: 'Ⲛⲉⲙ ⲡⲓⲡⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ',
+    pronunciation: 'nem pipnevma ethooab',
+    translation: 'and the Holy Spirit',
+  },
+  {
+    phrase: 'Ⲭⲉⲣⲉ ⲛⲉ Ⲙⲁⲣⲓⲁ',
+    pronunciation: 'shere ne maria',
+    translation: 'Hail to you Mary',
+  },
+  {
+    phrase: 'Ϯϭⲣⲟⲙⲡⲓ ⲉⲑⲛⲉⲥⲱⲥ',
+    pronunciation: 'tchrompi ethnesoos',
+    translation: 'the beautiful dove',
+  },
+  {
+    phrase: 'Ⲑⲏ ⲉⲧⲁⲥⲙⲓⲥⲓ ⲛⲁⲛ',
+    pronunciation: 'thee etasmisi nan',
+    translation: 'who bore unto us',
+  },
+  {
+    phrase: 'Ⲙ̀Ⲫ̀ⲛⲟⲩϯ ⲡⲓⲗⲟⲅⲟⲥ',
+    pronunciation: 'emephnooti piloghos',
+    translation: 'God the Word',
+  },
+  {
+    phrase: '+Ⲭⲉⲣⲉ ⲛⲉ Ⲙⲁⲣⲓⲁ',
+    pronunciation: 'shere ne maria',
+    translation: 'Hail to you Mary',
+  },
+  {
+    phrase: 'Ϧⲉⲛ ⲟⲩⲭⲉⲣⲉ ⲉϥⲟⲩⲁⲃ',
+    pronunciation: 'khen oushere efooab',
+    translation: 'with a holy hail',
+  },
+  {
+    phrase: '++Ⲭⲉⲣⲉ ⲛⲉ Ⲙⲁⲣⲓⲁ',
+    pronunciation: 'shere ne maria',
+    translation: 'Hail to you Mary',
+  },
+  {
+    phrase: 'Ⲑ̀ⲙⲁⲩ ⲙ̀ⲫⲏ ⲉⲑⲟⲩⲁⲃ',
+    pronunciation: 'ethmav emphee ethooab',
+    translation: 'the mother of the Holy',
+  },
+  {
+    phrase: 'Ⲭⲉⲣⲉ Ⲙⲓⲭⲁⲏⲗ',
+    pronunciation: 'shere mikhaeel',
+    translation: 'Hail to Michael',
+  },
+  {
+    phrase: 'Ⲡⲓⲛⲓϣϯ ⲛ̀ⲁⲣⲭⲏⲁⲅⲅⲉⲗⲟⲥ',
+    pronunciation: 'pinishti enarsheeangelos',
+    translation: 'the great archangel',
+  },
+  {
+    phrase: 'Ⲭⲉⲣⲉ Ⲅⲁⲃⲣⲓⲏⲗ',
+    pronunciation: 'shere ghabryeel',
+    translation: 'Hail to Gabriel',
+  },
+  {
+    phrase: 'Ⲡⲓⲥⲱⲧⲡ ⲙ̀ⲡⲓϥⲁⲓϣⲉⲛⲛⲟⲩϥⲓ',
+    pronunciation: 'pisotp empifayshennoofi',
+    translation: 'the announcer of Good News',
+  },
+];
+
 const lessonPlan = {
   6: lesson6,
+  10: lesson10,
 };
 
 export default lessonPlan;
