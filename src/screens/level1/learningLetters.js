@@ -14,27 +14,30 @@ const Level1LearningLetters = ({lessonNumber}) => {
 
   const renderLetters = letters => {
     const lettersViews = [];
-    // Render Header
-    lettersViews.push(
-      <View key={'header'} style={{flexDirection: 'row'}}>
-        <Text>Letter</Text>
-        <Text>Letter Name</Text>
-        <Text>Letter pronunciation</Text>
-        <Text>Practice typing</Text>
-      </View>,
-    );
+
     // Render Letters
     for (const [letter, letterExplanation] of Object.entries(letters)) {
-      lettersViews.push(
-        <View key={letter} style={{flexDirection: 'row'}}>
-          <Text>{letter}</Text>
-          <Text>{letterExplanation.name}</Text>
-          <Text>{letterExplanation.pronunciation}</Text>
-          <TextInput placeholder='type letter here'></TextInput>
-        </View>,
+      const letterView = (
+        <View key={letter}>
+          <View style={{flexDirection: 'row'}}>
+            <View style={styles.letterContainer}>
+              <Text style={styles.letterText}>{letter}</Text>
+              <Text style={styles.letterNameText}>{letterExplanation.name}</Text>
+            </View>
+            <Text style={styles.letterPronunciationText}>{letterExplanation.pronunciation}</Text>
+          </View>
+          <TextInput placeholder='Practice typing the letter here'></TextInput>
+        </View>
       );
+
+      lettersViews.push(letterView);
     }
-    return lettersViews;
+    return (
+      <View>
+        <Text style={styles.sectionHeaderText}>LETTERS</Text>
+        {lettersViews}
+      </View>
+    );
   };
 
   const renderPracticeWords = practiceWords => {
@@ -105,7 +108,7 @@ const Level1LearningLetters = ({lessonNumber}) => {
 
   return (
     <SafeAreaView>
-      <ScrollView style={{marginHorizontal: 20}}>
+      <ScrollView style={styles.screenScrollView}>
         {renderLetters(lessonPlan.letters)}
         {renderPracticeWords(lessonPlan.exampleWords)}
         {lessonPlan.vocab && renderVocab(lessonPlan.vocab)}
@@ -114,6 +117,37 @@ const Level1LearningLetters = ({lessonNumber}) => {
       </ScrollView>
     </SafeAreaView>
   );
+};
+
+const styles = {
+  screenScrollView: {
+    margin: 15,
+  },
+  sectionHeaderText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  letterContainer: {
+    width: 100,
+  },
+  letterText: {
+    fontSize: 40,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  letterNameText: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    color: 'white',
+    backgroundColor: 'black',
+    textAlign: 'center',
+  },
+  letterPronunciationText: {
+    fontSize: 17,
+    padding: 10,
+  },
 };
 
 Level1LearningLetters.propTypes = {
