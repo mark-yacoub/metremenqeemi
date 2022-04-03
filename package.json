@@ -8,7 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "postinstall": "cross-os podinstall"
+    "postinstall": "patch-package && cross-os podinstall"
   },
   "dependencies": {
     "@babel/preset-env": "^7.16.7",
@@ -50,6 +50,7 @@
     "jest": "^26.6.3",
     "jetifier": "^1.6.5",
     "metro-react-native-babel-preset": "^0.66.2",
+    "patch-package": "^6.4.7",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "react-devtools": "^4.6.0",
