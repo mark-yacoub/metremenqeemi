@@ -3,6 +3,8 @@ import {View, Text, TextInput, SafeAreaView, ScrollView} from 'react-native';
 import {withTheme} from 'react-native-paper';
 import PropTypes from 'prop-types';
 
+import PhrasePractice from './components/phrasePractice';
+
 import Level1Curriculum from '../../curriculum/level1/learningLetters';
 
 const Level1LearningLetters = ({lessonNumber}) => {
@@ -83,13 +85,11 @@ const Level1LearningLetters = ({lessonNumber}) => {
     const practicePhrasesViews = [];
     for (const practicePhrase of practicePhrases) {
       practicePhrasesViews.push(
-        <View>
-          <View key={practicePhrase.phrase} style={{flexDirection: 'row'}}>
-            <Text style={styles.practicePhraseText}>{practicePhrase.phrase}</Text>
-            <Text style={styles.practicePhraseText}>{practicePhrase.translation}</Text>
-          </View>
-          <TextInput placeholder='type pronunciation here'></TextInput>
-        </View>,
+        <PhrasePractice
+          key={practicePhrase.phrase}
+          phrase={practicePhrase.phrase}
+          translation={practicePhrase.translation}
+        />,
       );
     }
 
@@ -158,15 +158,6 @@ const styles = {
     flexShrink: 1,
     fontSize: 20,
     fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  practicePhraseText: {
-    flexBasis: 0,
-    flexGrow: 1,
-    flexShrink: 1,
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginTop: 10,
     textAlign: 'center',
   },
 };
