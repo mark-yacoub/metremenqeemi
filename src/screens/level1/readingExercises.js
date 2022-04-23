@@ -1,6 +1,8 @@
 import React from 'react';
-import {View, Text, TextInput} from 'react-native';
+import {ScrollView, Text} from 'react-native';
 import PropTypes from 'prop-types';
+
+import PhrasePractice from './components/phrasePractice';
 
 import Level1Curriculum from '../../curriculum/level1/readingExercise';
 
@@ -15,26 +17,34 @@ const Level1ReadingExercise = ({lessonNumber}) => {
     const phrasesViews = [];
     for (const readingPhrase of readingPhrases) {
       phrasesViews.push(
-        <View key={readingPhrase.phrase} style={{flexDirection: 'row'}}>
-          <Text>{readingPhrase.phrase}</Text>
-          <Text>{readingPhrase.translation}</Text>
-          <TextInput placeholder='type pronunciation here'></TextInput>
-        </View>,
+        <PhrasePractice
+          key={readingPhrase.phrase}
+          phrase={readingPhrase.phrase}
+          translation={readingPhrase.translation}
+        />,
       );
     }
     return phrasesViews;
   };
 
   return (
-    <>
-      <View key={'header'} style={{flexDirection: 'row'}}>
-        <Text>Phrase</Text>
-        <Text>Meaning</Text>
-        <Text>Practice pronunciation</Text>
-      </View>
+    <ScrollView style={styles.screenScrollView}>
+      <Text style={styles.headerText}>READING PRACTICE</Text>
       {renderPhrases()}
-    </>
+    </ScrollView>
   );
+};
+
+const styles = {
+  screenScrollView: {
+    margin: 15,
+  },
+  headerText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 10,
+  },
 };
 
 Level1ReadingExercise.propTypes = {

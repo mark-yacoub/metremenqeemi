@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TextInput, SafeAreaView, ScrollView} from 'react-native';
+import {View, Text, TextInput, ScrollView} from 'react-native';
 import {withTheme} from 'react-native-paper';
 import PropTypes from 'prop-types';
 
@@ -102,15 +102,13 @@ const Level1LearningLetters = ({lessonNumber}) => {
   };
 
   return (
-    <SafeAreaView>
-      <ScrollView style={styles.screenScrollView}>
-        {renderLetters(lessonPlan.letters)}
-        {renderPracticeWords(lessonPlan.exampleWords)}
-        {lessonPlan.vocab && renderVocab(lessonPlan.vocab)}
-        {renderPracticeWords(lessonPlan.practiceWords)}
-        {lessonPlan.practicePhrases && renderPracticePhrases(lessonPlan.practicePhrases)}
-      </ScrollView>
-    </SafeAreaView>
+    <ScrollView style={styles.screenScrollView}>
+      {renderLetters(lessonPlan.letters)}
+      {renderPracticeWords(lessonPlan.exampleWords)}
+      {lessonPlan.vocab && renderVocab(lessonPlan.vocab)}
+      {renderPracticeWords(lessonPlan.practiceWords)}
+      {lessonPlan.practicePhrases && renderPracticePhrases(lessonPlan.practicePhrases)}
+    </ScrollView>
   );
 };
 
