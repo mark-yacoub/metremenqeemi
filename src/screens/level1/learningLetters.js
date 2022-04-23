@@ -1,7 +1,9 @@
 import React from 'react';
-import {View, Text, TextInput, SafeAreaView, ScrollView} from 'react-native';
+import {View, Text, TextInput, ScrollView} from 'react-native';
 import {withTheme} from 'react-native-paper';
 import PropTypes from 'prop-types';
+
+import PhrasePractice from './components/phrasePractice';
 
 import Level1Curriculum from '../../curriculum/level1/learningLetters';
 
@@ -83,13 +85,11 @@ const Level1LearningLetters = ({lessonNumber}) => {
     const practicePhrasesViews = [];
     for (const practicePhrase of practicePhrases) {
       practicePhrasesViews.push(
-        <View>
-          <View key={practicePhrase.phrase} style={{flexDirection: 'row'}}>
-            <Text style={styles.practicePhraseText}>{practicePhrase.phrase}</Text>
-            <Text style={styles.practicePhraseText}>{practicePhrase.translation}</Text>
-          </View>
-          <TextInput placeholder='type pronunciation here'></TextInput>
-        </View>,
+        <PhrasePractice
+          key={practicePhrase.phrase}
+          phrase={practicePhrase.phrase}
+          translation={practicePhrase.translation}
+        />,
       );
     }
 
@@ -102,15 +102,13 @@ const Level1LearningLetters = ({lessonNumber}) => {
   };
 
   return (
-    <SafeAreaView>
-      <ScrollView style={styles.screenScrollView}>
-        {renderLetters(lessonPlan.letters)}
-        {renderPracticeWords(lessonPlan.exampleWords)}
-        {lessonPlan.vocab && renderVocab(lessonPlan.vocab)}
-        {renderPracticeWords(lessonPlan.practiceWords)}
-        {lessonPlan.practicePhrases && renderPracticePhrases(lessonPlan.practicePhrases)}
-      </ScrollView>
-    </SafeAreaView>
+    <ScrollView style={styles.screenScrollView}>
+      {renderLetters(lessonPlan.letters)}
+      {renderPracticeWords(lessonPlan.exampleWords)}
+      {lessonPlan.vocab && renderVocab(lessonPlan.vocab)}
+      {renderPracticeWords(lessonPlan.practiceWords)}
+      {lessonPlan.practicePhrases && renderPracticePhrases(lessonPlan.practicePhrases)}
+    </ScrollView>
   );
 };
 
@@ -158,15 +156,6 @@ const styles = {
     flexShrink: 1,
     fontSize: 20,
     fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  practicePhraseText: {
-    flexBasis: 0,
-    flexGrow: 1,
-    flexShrink: 1,
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginTop: 10,
     textAlign: 'center',
   },
 };

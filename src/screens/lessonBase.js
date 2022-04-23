@@ -1,5 +1,5 @@
 import React, {Suspense} from 'react';
-import {Text} from 'react-native';
+import {Text, SafeAreaView} from 'react-native';
 import PropTypes from 'prop-types';
 
 import leve1Router from '../utils/levelRouters/level1';
@@ -30,8 +30,10 @@ const Lesson = ({route}) => {
 
   return (
     <Suspense fallback={loadingScreen()}>
-      <ProgressBar />
-      {getComponentForLesson(levelNumber, lessonNumber)}
+      <SafeAreaView>
+        <ProgressBar />
+        {getComponentForLesson(levelNumber, lessonNumber)}
+      </SafeAreaView>
     </Suspense>
   );
 };
