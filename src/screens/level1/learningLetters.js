@@ -33,7 +33,7 @@ const Level1LearningLetters = ({lessonNumber}) => {
       lettersViews.push(letterView);
     }
     return (
-      <View>
+      <View style={styles.sectionContainer}>
         <Text style={styles.sectionHeaderText}>LETTERS</Text>
         {lettersViews}
       </View>
@@ -42,68 +42,63 @@ const Level1LearningLetters = ({lessonNumber}) => {
 
   const renderPracticeWords = practiceWords => {
     const practiceWordsViews = [];
-    // Render Header
-    practiceWordsViews.push(
-      <View key={'header'} style={{flexDirection: 'row'}}>
-        <Text>Word</Text>
-        <Text>Practice typing</Text>
-        <Text>Practice pronunciation</Text>
-      </View>,
-    );
-    // Render Practice Words
     for (const practiceWord of practiceWords) {
       practiceWordsViews.push(
-        <View key={practiceWord.word} style={{flexDirection: 'row'}}>
-          <Text>{practiceWord.word}</Text>
+        <View key={practiceWord.word} style={styles.practiceWordContainer}>
+          <Text style={styles.practiceWordText}>{practiceWord.word}</Text>
           <TextInput placeholder='type word here'></TextInput>
           <TextInput placeholder='type pronunciation here'></TextInput>
         </View>,
       );
     }
-    return practiceWordsViews;
+
+    return (
+      <View style={styles.sectionContainer}>
+        <Text style={styles.sectionHeaderText}>PRACTICE READING</Text>
+        {practiceWordsViews}
+      </View>
+    );
   };
 
   const renderVocab = vocabWords => {
     const vocabWordsViews = [];
-    // Render Header
-    vocabWordsViews.push(
-      <View key={'header'} style={{flexDirection: 'row'}}>
-        <Text>Word</Text>
-        <Text>Word translation</Text>
-      </View>,
-    );
-    // Render Vocab Words
     for (const vocabWord of vocabWords) {
       vocabWordsViews.push(
         <View key={vocabWord.word} style={{flexDirection: 'row'}}>
-          <Text>{vocabWord.word}</Text>
-          <Text>{vocabWord.translation}</Text>
+          <Text style={styles.vocabText}>{vocabWord.word}</Text>
+          <Text style={styles.vocabText}>{vocabWord.translation}</Text>
         </View>,
       );
     }
-    return vocabWordsViews;
+
+    return (
+      <View style={styles.sectionContainer}>
+        <Text style={styles.sectionHeaderText}>WORDS TO LEARN</Text>
+        {vocabWordsViews}
+      </View>
+    );
   };
 
   const renderPracticePhrases = practicePhrases => {
     const practicePhrasesViews = [];
-    // Render Header
-    practicePhrasesViews.push(
-      <View key={'header'} style={{flexDirection: 'row'}}>
-        <Text>Phrase</Text>
-        <Text>Translation</Text>
-        <Text>Practice pronunciation</Text>
-      </View>,
-    );
     for (const practicePhrase of practicePhrases) {
       practicePhrasesViews.push(
-        <View key={practicePhrase.phrase} style={{flexDirection: 'row'}}>
-          <Text>{practicePhrase.phrase}</Text>
-          <Text>{practicePhrase.translation}</Text>
+        <View>
+          <View key={practicePhrase.phrase} style={{flexDirection: 'row'}}>
+            <Text style={styles.practicePhraseText}>{practicePhrase.phrase}</Text>
+            <Text style={styles.practicePhraseText}>{practicePhrase.translation}</Text>
+          </View>
           <TextInput placeholder='type pronunciation here'></TextInput>
         </View>,
       );
     }
-    return practicePhrasesViews;
+
+    return (
+      <View style={styles.sectionContainer}>
+        <Text style={styles.sectionHeaderText}>PRACTICE PHRASES</Text>
+        {practicePhrasesViews}
+      </View>
+    );
   };
 
   return (
@@ -122,6 +117,9 @@ const Level1LearningLetters = ({lessonNumber}) => {
 const styles = {
   screenScrollView: {
     margin: 15,
+  },
+  sectionContainer: {
+    marginBottom: 20,
   },
   sectionHeaderText: {
     fontSize: 20,
@@ -147,6 +145,29 @@ const styles = {
   letterPronunciationText: {
     fontSize: 17,
     padding: 10,
+  },
+  practiceWordContainer: {
+    marginBottom: 20,
+  },
+  practiceWordText: {
+    fontSize: 20,
+  },
+  vocabText: {
+    flexBasis: 0,
+    flexGrow: 1,
+    flexShrink: 1,
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  practicePhraseText: {
+    flexBasis: 0,
+    flexGrow: 1,
+    flexShrink: 1,
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginTop: 10,
+    textAlign: 'center',
   },
 };
 
