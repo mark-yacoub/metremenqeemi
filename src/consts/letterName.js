@@ -29,7 +29,7 @@ export default LETTER_NAME = {
   Ϣ: 'Shay',
   Ϥ: 'Fay',
   Ϧ: 'Khay',
-  Ϩ: 'Hoori',
+  Ϩ: 'Houri',
   Ϫ: 'Ginga',
   Ϭ: 'Cheema',
   Ϯ: 'Ti',

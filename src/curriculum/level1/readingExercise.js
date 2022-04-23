@@ -1,7 +1,7 @@
 const lesson6 = [
   {
     phrase: 'Ⲡ̀ⲟⲩⲣⲟ ⲛ̀ⲧⲉ ϯϩⲓⲣⲏⲛⲏ',
-    pronunciation: 'epooro ente tihireenee',
+    pronunciation: 'epouro ente tihireenee',
     translation: 'O king of peace',
   },
   {
@@ -16,7 +16,7 @@ const lesson6 = [
   },
   {
     phrase: 'Ⲫ̀ⲛⲟⲩϯ ⲛⲁⲓ ⲛⲁⲛ',
-    pronunciation: 'Ephnooti nay nan',
+    pronunciation: 'Ephnouti nay nan',
     translation: 'God have mercy on us',
   },
   {
@@ -26,7 +26,7 @@ const lesson6 = [
   },
   {
     phrase: 'Ⲫⲁⲓ ⲡⲉ ⲡⲓⲉϩⲟⲟⲩ',
-    pronunciation: 'Phay pe pieho-oo',
+    pronunciation: 'Phay pe pieho-ou',
     translation: 'This is the day',
   },
   {
@@ -36,12 +36,12 @@ const lesson6 = [
   },
   {
     phrase: 'Ⲙⲏⲓϥ ⲛⲁⲛ ⲙ̀ⲫⲟⲟⲩ',
-    pronunciation: 'meeyf nan empho-oo',
+    pronunciation: 'meeyf nan empho-ou',
     translation: 'Give us today',
   },
   {
     phrase: 'Ⲡⲉⲛⲓⲱⲧ ⲉⲧϧⲉⲛ ⲛⲓⲫⲏⲟⲩⲓ',
-    pronunciation: 'penyot etkhen nipheeooi',
+    pronunciation: 'penyot etkhen nipheeoui',
     translation: 'Our Father who art in heaven',
   },
 ];
@@ -54,7 +54,7 @@ const lesson10 = [
   },
   {
     phrase: 'Ⲛⲓⲫⲏⲟⲩⲓ',
-    pronunciation: 'nipheeooi',
+    pronunciation: 'nipheeoui',
     translation: 'The Heavens',
   },
   {
@@ -120,12 +120,12 @@ const lesson10 = [
   /**/
   {
     phrase: 'Ⲁⲙⲱⲓⲛⲓ ⲙⲁⲣⲉⲛ ⲟⲩⲱϣⲧ',
-    pronunciation: 'amooyni maren oo-oosht',
+    pronunciation: 'amooyni maren ou-oosht',
     translation: 'Come let us worship',
   },
   {
     phrase: 'Ⲛ̀ϯⲧⲣⲓⲁⲥ ⲉⲑⲟⲩⲁⲃ',
-    pronunciation: 'entitrias ethooab',
+    pronunciation: 'entitrias ethouab',
     translation: 'the Holy Trinity',
   },
   {
@@ -135,7 +135,7 @@ const lesson10 = [
   },
   {
     phrase: 'Ⲛⲉⲙ ⲡⲓⲡⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ',
-    pronunciation: 'nem pipnevma ethooab',
+    pronunciation: 'nem pipnevma ethouab',
     translation: 'and the Holy Spirit',
   },
   {
@@ -155,7 +155,7 @@ const lesson10 = [
   },
   {
     phrase: 'Ⲙ̀Ⲫ̀ⲛⲟⲩϯ ⲡⲓⲗⲟⲅⲟⲥ',
-    pronunciation: 'emephnooti piloghos',
+    pronunciation: 'emephnouti piloghos',
     translation: 'God the Word',
   },
   {
@@ -165,7 +165,7 @@ const lesson10 = [
   },
   {
     phrase: 'Ϧⲉⲛ ⲟⲩⲭⲉⲣⲉ ⲉϥⲟⲩⲁⲃ',
-    pronunciation: 'khen oushere efooab',
+    pronunciation: 'khen oushere efouab',
     translation: 'with a holy hail',
   },
   {
@@ -175,7 +175,7 @@ const lesson10 = [
   },
   {
     phrase: 'Ⲑ̀ⲙⲁⲩ ⲙ̀ⲫⲏ ⲉⲑⲟⲩⲁⲃ',
-    pronunciation: 'ethmav emphee ethooab',
+    pronunciation: 'ethmav emphee ethouab',
     translation: 'the mother of the Holy',
   },
   {
@@ -195,7 +195,7 @@ const lesson10 = [
   },
   {
     phrase: 'Ⲡⲓⲥⲱⲧⲡ ⲙ̀ⲡⲓϥⲁⲓϣⲉⲛⲛⲟⲩϥⲓ',
-    pronunciation: 'pisotp empifayshennoofi',
+    pronunciation: 'pisotp empifayshennoufi',
     translation: 'the announcer of Good News',
   },
 ];

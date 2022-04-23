@@ -20,7 +20,7 @@ export default LETTER_PRONUNCIATION = {
   Ⲧ: 'T',
   ⲧ: 'D if preceded by ⲛ in Greek words\nT otherwise',
   Ⲩ: 'y as in Hymn',
-  ⲩ: 'V if preceded by ⲁ-ⲉ\nOO when combined with ⲟ\nY as in Hymn otherwise',
+  ⲩ: 'V when preceded by ⲁ-ⲉ\nOU when preceded by ⲟ\nY as in Hymn otherwise',
   Ⲫ: 'Ph',
   Ⲭ: 'Q in Coptic words\nSH when followed by ⲉ-ⲓ-ⲏ-ⲩ in Greek words\nKH otherwise in Greek words',
   Ⲯ: 'Ps',
@@ -32,6 +32,6 @@ export default LETTER_PRONUNCIATION = {
   Ϫ: 'Same rules of the English letter G\nJ if followed by ⲉ-ⲓ-ⲏ\nG otherwise',
   Ϭ: 'Ch',
   Ϯ: 'Ti',
-  ⲞⲨ: 'OO as in food\nfⲞⲨd → fOOd',
+  ⲞⲨ: 'OU as in yOU\nyⲞⲨ → yOU',
   '⳿': 'Ⲉ if on a consonant or a glottal stop before the vowel if on a vowel',
 };
