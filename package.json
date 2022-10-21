@@ -26,7 +26,7 @@
     "react-native-gesture-handler": "^1.10.3",
     "react-native-paper": "^4.11.2",
     "react-native-progress-bar-animated": "^1.0.6",
-    "react-native-reanimated": "^1.13.2",
+    "react-native-reanimated": "^2.10.0",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.10.1",
     "ts-node": "^10.4.0",
